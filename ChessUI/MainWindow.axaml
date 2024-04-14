@@ -1,0 +1,29 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="ChessUI.MainWindow"
+        Title="ChessUI" SizeToContent="Height" Width="600"
+        WindowStartupLocation="CenterScreen"
+        Background="Black">
+        <Viewbox>
+                <Grid x:Name="BoardGrid"
+                      Width="600"
+                      Height="600">
+                        <Grid.Background>
+                                <ImageBrush Source="Assets\Board.png"/>
+                        </Grid.Background>
+                        <UniformGrid x:Name="HightlightGrid"
+                                     Rows="8"
+                                     Columns="8"
+                                     PointerPressed="BoardGrid_MouseDown">
+                                
+                        </UniformGrid>
+                        <UniformGrid x:Name="PieceGrid"
+                                     Rows="8"
+                                     Columns="8">
+                        </UniformGrid>
+                </Grid>
+        </Viewbox>
+</Window>
