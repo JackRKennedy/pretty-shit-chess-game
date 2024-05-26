@@ -4389,11 +4389,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jackkennedy/Desktop/csharp/ChessGame/ChessGame/ChessUI/ChessUI.csproj",
+      "projectUniqueName": "/Users/jackkennedy/Desktop/csharp/ChessGame/pretty-shit-chess-game/ChessUI/ChessUI.csproj",
       "projectName": "ChessUI",
-      "projectPath": "/Users/jackkennedy/Desktop/csharp/ChessGame/ChessGame/ChessUI/ChessUI.csproj",
+      "projectPath": "/Users/jackkennedy/Desktop/csharp/ChessGame/pretty-shit-chess-game/ChessUI/ChessUI.csproj",
       "packagesPath": "/Users/jackkennedy/.nuget/packages/",
-      "outputPath": "/Users/jackkennedy/Desktop/csharp/ChessGame/ChessGame/ChessUI/obj/",
+      "outputPath": "/Users/jackkennedy/Desktop/csharp/ChessGame/pretty-shit-chess-game/ChessUI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/jackkennedy/.nuget/NuGet/NuGet.Config"
@@ -4408,8 +4408,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/jackkennedy/Desktop/csharp/ChessGame/ChessGame/ChessLogic/ChessLogic.csproj": {
-              "projectPath": "/Users/jackkennedy/Desktop/csharp/ChessGame/ChessGame/ChessLogic/ChessLogic.csproj"
+            "/Users/jackkennedy/Desktop/csharp/ChessGame/pretty-shit-chess-game/ChessLogic/ChessLogic.csproj": {
+              "projectPath": "/Users/jackkennedy/Desktop/csharp/ChessGame/pretty-shit-chess-game/ChessLogic/ChessLogic.csproj"
             }
           }
         }

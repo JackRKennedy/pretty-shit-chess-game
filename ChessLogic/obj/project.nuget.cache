@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ro8041uvkcW13mfKP/jZFiaGNifH91n2XpD0IGNgqF/2EGlFLoUVZAmDt79IcPmTReKO2bQ5BUMOVVgsYHO6zQ==",
+  "dgSpecHash": "Uig9f3MPGUic2Zoz4/I/2/sHQkd2cAsIIPGmK8uQmYGXHVQdzfsAZiTqP7hSc9D4yw+TrCf9nO3JlfhBHt15+w==",
   "success": true,
-  "projectFilePath": "/Users/jackkennedy/Desktop/csharp/ChessGame/ChessGame/ChessLogic/ChessLogic.csproj",
+  "projectFilePath": "/Users/jackkennedy/Desktop/csharp/ChessGame/pretty-shit-chess-game/ChessLogic/ChessLogic.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

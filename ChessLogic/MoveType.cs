@@ -3,8 +3,8 @@ namespace ChessLogic;
 public enum MoveType
 {
     Normal, 
-    CastleKing,
-    CastleQueen,
+    CastleKingside,
+    CastleQueenside,
     DoublePawn, 
     EnPassant,
     PawnPromotion,

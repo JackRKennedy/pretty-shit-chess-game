@@ -1,63 +1,55 @@
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="ChessUI.GameOverMenu">
-    <Border>
-        <Border.Styles>
-            <StaticResource ResourceKey="BorderStyle" />
-        </Border.Styles>
-        <Grid>
+    <Border Background="#AA000000"> <!-- Semi-transparent black background -->
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="20"/> <!-- Spacer row -->
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-        
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            
-            <TextBlock Grid.ColumnSpan="2"
-                x:Name = "WinnerText"
-                Text="WINNER TEXT"
-                FontSize="28">
-                <TextBlock.Styles>
-                    <StaticResource ResourceKey="TextStyle" />
-                </TextBlock.Styles>
+
+            <TextBlock Grid.Row="0"
+                       x:Name="WinnerText"
+                       Text="WINNER TEXT"
+                       FontSize="36"
+                       Foreground="White"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,10"> <!-- Increase margin for visual spacing -->
             </TextBlock>
 
             <TextBlock Grid.Row="1"
-                       Grid.ColumnSpan="2"
                        x:Name="ReasonText"
                        Text="REASON TEXT"
-                       FontSize="16">
-                <TextBlock.Styles>
-                    <StaticResource ResourceKey="TextStyle" />
-                </TextBlock.Styles>
+                       FontSize="24"
+                       Foreground="White"
+                       HorizontalAlignment="Center">
             </TextBlock>
-            
-            <Button Grid.Row="2"
-                    Content="RESTART"
-                    Width="80"
-                    Height="30"
-                    PointerPressed="Restart_Click">
-                <Button.Styles>
-                    <StaticResource ResourceKey="ButtonStyle"/>
-                </Button.Styles>
-            </Button>
-            
-            <Button Grid.Row="2"
-                    Content="EXIT"
-                    Width="80"
-                    Height="30"
-                    PointerPressed="Exit_Click">
-                <Button.Styles>
-                    <StaticResource ResourceKey="ButtonStyle" />
-                </Button.Styles>
-            </Button>
+
+            <!-- Buttons container for equal width and margin -->
+            <!-- Buttons container for equal width and margin -->
+            <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Spacing="10">
+                <Button Content="RESTART"
+                        Width="120" Height="40"
+                        BorderThickness="1"
+                        BorderBrush="White"
+                        Background="#CC221111" Foreground="White"
+                        CornerRadius="5"
+                        HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                        Click="Restart_Click"><!-- Semi-transparent background -->
+                </Button>
+
+                <Button Content="EXIT"
+                        Width="120" Height="40"
+                        BorderThickness="1"
+                        BorderBrush="White"
+                        Background="#CC221111" Foreground="White"
+                        CornerRadius="5"
+                        HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                        Click="Exit_Click"><!-- Semi-transparent background -->
+                </Button>
+            </StackPanel>
         </Grid>
     </Border>
 </UserControl>

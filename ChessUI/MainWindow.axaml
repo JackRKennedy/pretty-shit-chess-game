@@ -24,6 +24,9 @@
                                      Rows="8"
                                      Columns="8">
                         </UniformGrid>
+                        <ContentControl x:Name="MenuContainer">
+                                
+                        </ContentControl>
                 </Grid>
         </Viewbox>
 </Window>

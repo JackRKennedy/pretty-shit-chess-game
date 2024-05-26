@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s2XZ9VwTShSPgJrMEbfDqMETnJyq7rz5XStFWDG4BHYNzbkzqDqJdf7lDAyapNWA4+uqiJMhpDNELpspyxBWyQ==",
+  "dgSpecHash": "clSbG5CqdQbEmyMSrwUd0mXsrCd9onOLm90SdElXiL2DXJt4MaalxT0L6V40/oyxmArX4jG56vzYgKEv1qjsww==",
   "success": true,
-  "projectFilePath": "/Users/jackkennedy/Desktop/csharp/ChessGame/ChessGame/ChessUI/ChessUI.csproj",
+  "projectFilePath": "/Users/jackkennedy/Desktop/csharp/ChessGame/pretty-shit-chess-game/ChessUI/ChessUI.csproj",
   "expectedPackageFiles": [
     "/Users/jackkennedy/.nuget/packages/avalonia/11.0.10/avalonia.11.0.10.nupkg.sha512",
     "/Users/jackkennedy/.nuget/packages/avalonia.angle.windows.natives/2.1.0.2023020321/avalonia.angle.windows.natives.2.1.0.2023020321.nupkg.sha512",

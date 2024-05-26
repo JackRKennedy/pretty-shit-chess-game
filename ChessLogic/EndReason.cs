@@ -7,4 +7,5 @@ public enum EndReason
     InsufficientMaterial,
     ThreefoldRepetition,
     FiftyMoveRule,
+    Resignation
 }

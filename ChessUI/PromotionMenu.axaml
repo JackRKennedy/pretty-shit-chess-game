@@ -1,0 +1,40 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ChessUI.PromotionMenu">
+    <Border Background="#AA000000" Width="275" Height="125" BorderThickness="1" BorderBrush="White" CornerRadius="5">
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            
+            <TextBlock Grid.Row="0"
+                       Text="Promote to:"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Bottom"
+                       FontSize="24"
+                       Foreground="White"
+                       Margin="0,0,0,10"/> <!-- Add margin for spacing -->
+            
+            <UniformGrid Grid.Row="1"
+                         Rows="1"
+                         Columns="4"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Top">
+                <Image x:Name="QueenImage"
+                       PointerPressed="QueenImage_OnPointerPressed"
+                       Source="Assets/whiteQueen.png"
+                       Width="40" Height="40" Margin="5"/> <!-- Set image size and margin -->
+                <Image x:Name="KnightImage"
+                       PointerPressed="KnightImage_OnPointerPressed"
+                       Source="Assets/whiteKnight.png" Width="40" Height="40" Margin="5"/><!-- Assuming you have the correct asset -->
+                <Image x:Name="BishopImage"
+                       PointerPressed="BishopImage_OnPointerPressed"
+                       Source="Assets/whiteBishop.png" Width="40" Height="40" Margin="5"/><!-- Assuming you have the correct asset -->
+                <Image x:Name="RookImage"
+                       PointerPressed="RookImage_OnPointerPressed"
+                       Source="Assets/whiteRook.png" Width="40" Height="40" Margin="5"/><!-- Assuming you have the correct asset -->
+            </UniformGrid>
+        </Grid>
+    </Border>
+</UserControl>

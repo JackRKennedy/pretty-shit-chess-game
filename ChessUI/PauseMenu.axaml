@@ -1,0 +1,43 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ChessUI.PauseMenu">
+    <Border Background="#AA000000"> <!-- Semi-transparent black background -->
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0"
+                       Text="Paused"
+                       FontSize="36"
+                       Foreground="White"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,10"> <!-- Increase margin for visual spacing -->
+            </TextBlock>
+
+            <!-- Buttons container for equal width and margin -->
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Spacing="10">
+                <Button Content="Continue"
+                        Width="120" Height="40"
+                        BorderThickness="1"
+                        BorderBrush="White"
+                        Background="#CC221111" Foreground="White"
+                        CornerRadius="5"
+                        HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                        Click="Continue_Click"><!-- Semi-transparent background -->
+                </Button>
+
+                <Button Content="Restart"
+                        Width="120" Height="40"
+                        BorderThickness="1"
+                        BorderBrush="White"
+                        Background="#CC221111" Foreground="White"
+                        CornerRadius="5"
+                        HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                        Click="Restart_Click"><!-- Semi-transparent background -->
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>

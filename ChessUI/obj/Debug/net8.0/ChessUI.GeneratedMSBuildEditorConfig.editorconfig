@@ -13,15 +13,24 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ChessUI
-build_property.ProjectDir = /Users/jackkennedy/Desktop/csharp/ChessGame/ChessGame/ChessUI/
+build_property.ProjectDir = /Users/jackkennedy/Desktop/csharp/ChessGame/pretty-shit-chess-game/ChessUI/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[/Users/jackkennedy/Desktop/csharp/ChessGame/ChessGame/ChessUI/App.axaml]
+[/Users/jackkennedy/Desktop/csharp/ChessGame/pretty-shit-chess-game/ChessUI/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/jackkennedy/Desktop/csharp/ChessGame/ChessGame/ChessUI/GameOverMenu.axaml]
+[/Users/jackkennedy/Desktop/csharp/ChessGame/pretty-shit-chess-game/ChessUI/GameOverMenu.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/jackkennedy/Desktop/csharp/ChessGame/ChessGame/ChessUI/MainWindow.axaml]
+[/Users/jackkennedy/Desktop/csharp/ChessGame/pretty-shit-chess-game/ChessUI/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/jackkennedy/Desktop/csharp/ChessGame/pretty-shit-chess-game/ChessUI/PauseMenu.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/jackkennedy/Desktop/csharp/ChessGame/pretty-shit-chess-game/ChessUI/PromotionMenu.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/jackkennedy/Desktop/csharp/ChessGame/pretty-shit-chess-game/ChessUI/ResignationMenu.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

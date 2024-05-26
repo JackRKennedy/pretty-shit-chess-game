@@ -1,4 +1,5 @@
 using System.Runtime.InteropServices.JavaScript;
+ 
 
 namespace ChessLogic;
 
@@ -7,11 +8,19 @@ public class GameState
     public Board Board { get; }
     public Player CurrentPlayer { get; private set; }
     public Result Result { get; private set; } = null;
+    
+    private int noCaptureOrPawnMoves = 0;
+    private string stateString;
 
+    private readonly Dictionary<string, int> stateHistory = new Dictionary<string, int>();
+    
     public GameState(Player player, Board board)
     {
         CurrentPlayer = player;
         Board = board;
+        
+        stateString = new StateString(CurrentPlayer, board).ToString();
+        stateHistory[stateString] = 1;
     }
 
     public IEnumerable<Move> LegalMoveForPiece(Position pos)
@@ -28,8 +37,21 @@ public class GameState
 
     public void MakeMove(Move move)
     {
-        move.Execute(Board);
+        Board.SetPawnSkipPosition(CurrentPlayer, null);
+        bool captureOrPawn = move.Execute(Board);
+        
+        if (captureOrPawn)
+        {
+            noCaptureOrPawnMoves = 0;
+            stateHistory.Clear(); //If capture has been made, or pawn has been moved, we can never see a previous position again
+        }
+        else
+        {
+            noCaptureOrPawnMoves++;
+        }
+        
         CurrentPlayer = CurrentPlayer.Opponent();
+        UpdateStateString();
         CheckForGameOver();
     }
 
@@ -50,17 +72,60 @@ public class GameState
         {
             if (Board.IsInCheck(CurrentPlayer))
             {
-                Result = Result.Win(CurrentPlayer.Opponent());
+                Result = Result.Win(CurrentPlayer.Opponent(), EndReason.Checkmate);
             }
             else
             {
                 Result = Result.Draw(EndReason.Stalemate);
             }
+            
+        }
+        else if (Board.InsufficientMaterial())
+        {
+            Result = Result.Draw(EndReason.InsufficientMaterial);
+        }
+        else if (FiftyMoveRule())
+        {
+            Result = Result.Draw(EndReason.FiftyMoveRule);
+        }
+        else if (ThreefoldRepetition())
+        {
+            Result = Result.Draw(EndReason.ThreefoldRepetition);
         }
     }
 
     public bool IsGameOver()
     {
         return Result != null;
+    }
+
+    private bool FiftyMoveRule()
+    {
+        int fullmoves = noCaptureOrPawnMoves / 2;
+        return fullmoves == 50;
+    }
+
+    public void Resign()
+    {
+        this.Result = Result.Win(CurrentPlayer.Opponent(), EndReason.Resignation);
+    }
+
+    private void UpdateStateString()
+    {
+        stateString = new StateString(CurrentPlayer, Board).ToString();
+        
+        if (!stateHistory.ContainsKey(stateString))
+        {
+            stateHistory[stateString] = 1;
+        }
+        else
+        {
+            stateHistory[stateString]++;
+        }
+    }
+    
+    private bool ThreefoldRepetition()
+    {
+        return stateHistory[stateString] == 3;
     }
 }

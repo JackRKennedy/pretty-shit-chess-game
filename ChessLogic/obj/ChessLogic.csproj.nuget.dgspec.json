@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jackkennedy/Desktop/csharp/ChessGame/ChessGame/ChessLogic/ChessLogic.csproj": {}
+    "/Users/jackkennedy/Desktop/csharp/ChessGame/pretty-shit-chess-game/ChessLogic/ChessLogic.csproj": {}
   },
   "projects": {
-    "/Users/jackkennedy/Desktop/csharp/ChessGame/ChessGame/ChessLogic/ChessLogic.csproj": {
+    "/Users/jackkennedy/Desktop/csharp/ChessGame/pretty-shit-chess-game/ChessLogic/ChessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jackkennedy/Desktop/csharp/ChessGame/ChessGame/ChessLogic/ChessLogic.csproj",
+        "projectUniqueName": "/Users/jackkennedy/Desktop/csharp/ChessGame/pretty-shit-chess-game/ChessLogic/ChessLogic.csproj",
         "projectName": "ChessLogic",
-        "projectPath": "/Users/jackkennedy/Desktop/csharp/ChessGame/ChessGame/ChessLogic/ChessLogic.csproj",
+        "projectPath": "/Users/jackkennedy/Desktop/csharp/ChessGame/pretty-shit-chess-game/ChessLogic/ChessLogic.csproj",
         "packagesPath": "/Users/jackkennedy/.nuget/packages/",
-        "outputPath": "/Users/jackkennedy/Desktop/csharp/ChessGame/ChessGame/ChessLogic/obj/",
+        "outputPath": "/Users/jackkennedy/Desktop/csharp/ChessGame/pretty-shit-chess-game/ChessLogic/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jackkennedy/.nuget/NuGet/NuGet.Config"
